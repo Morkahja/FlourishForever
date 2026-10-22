@@ -1,5 +1,9 @@
 # Flourish Forever — Changelog
 
+## 0.3.1-beta — 2026-10-22
+
+- No change to how emotes play.
+
 ## 0.3.0-beta — 2026-10-22
 
 - Open `/flourish` to choose abilities that play an emote when you cast them.

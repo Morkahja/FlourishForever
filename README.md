@@ -5,7 +5,7 @@
 Pick abilities from your spellbook, then set the chance, the cooldown, and which emotes can play. When that ability lands, one of the checked emotes is chosen at random.
 
 Built by **Babunigaming** for **World of Warcraft: Forever** (Interface 16001).  
-Current version: **0.3.0-beta**
+Current version: **0.3.1-beta**
 
 ## What it does
 
