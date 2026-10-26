@@ -1,7 +1,7 @@
 ## Interface: 16001
 ## Title: Flourish Forever
 ## Notes: Play a random emote when you cast a configured ability. /flourish
-## Author: Babunigaming
+## Author: Babuni.dev
 ## Version: 0.3.1-beta
 ## SavedVariables: FlourishForeverStorage
 
