@@ -1,5 +1,7 @@
 # Flourish Forever
 
+**Author:** Babuni.dev
+
 **Flourish Forever plays an emote when you cast an ability you choose.**
 
 Pick abilities from your spellbook, then set the chance, the cooldown, and which emotes can play. When that ability lands, one of the checked emotes is chosen at random.
