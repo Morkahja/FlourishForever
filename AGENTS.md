@@ -1,5 +1,37 @@
-# FlourishForever — development rules
+# Flourish Forever — development and AI collaboration rules
 
-**Author:** Babuni.dev
+**Creator and creative decision authority:** Babuni.dev.  
+**Release:** 0.3.1-beta / WoW: Forever 16001. **Prior development credit:** Babunigaming.
 
-Preserve source-supported mechanics and user intention. Document historical user decisions separately from AI suggestions. Existing code is not proof of in-game verification. Maintain README, CHANGELOG, concept, roadmap and DEVLOG with later changes, and retain evidence of rejected alternatives.
+## Preserve the human-directed expression concept
+
+The creator's idea is **automatic random native-game emotes on selected ability casts**, with individual ability chance, cooldown and curated emote pools. Do not reimagine it as a chat spam bot, combat spell automation, AI-generated roleplay dialogue, or universal “every ability emotes” feature without explicit creator approval.
+
+The player must choose eligible non-passive abilities; a fresh character's configured ability list is empty. The default enabled switch alone does not cause unsolicited emotes. Respect per-character autonomy and the `DoEmote` pipeline.
+
+## Source invariants and implementation risks
+
+- The TOC order is **Storage.lua → FlourishForever.lua → ActionEmotes.lua**, with account-wide `FlourishForeverStorage`.
+- Character profiles are keyed by **`UnitGUID("player")`**. Forever's model is realmless; name-realm keys occur only in the **legacy migration fallback**, not as a cross-realm identity feature.
+- `EnsureDB()` binds on access; it can create a temporary local profile when the GUID isn't ready. Test early actions and verify persistence after login.
+- `ROARitFOREVERStorage` is adopted **only if the old global has been loaded** and new root doesn't exist; avoid claiming automatic disk migration from a deleted previous addon.
+- Per-name `instances` store `name`, `spellID`, `chance`, `cooldown`, `emotes`. Spell **names** are normalized by trim/lowercase; event spell IDs are resolved back to names, so ranks/locale changes may collide or lose match.
+- Trigger event is **player `UNIT_SPELLCAST_SUCCEEDED`**, not combat-log proof that a spell hit. Failed casts shouldn't be described as landed or as the event source.
+- Default chance **100%**, cooldown **6 seconds**, default allowed token **ROAR**; UI bounds chance 0–100 and cooldown 0–120. Saved malformed values are only converted, not clamped on load.
+- **Cooldown is consumed only on an actual successful emote selection**; a failed probability check or empty pool does not spend it. Runtime timestamps live in `lastFireByAbility`, **not SavedVariables**.
+- Source's `lastFireByAbility[key] or 0` potentially blocks a first cast when `GetTime()<cooldown`; investigate with test data before presenting as in-game proven.
+- Emote list is discovered from `EMOTE*_TOKEN` globals, with ROAR fallback; `DoEmote(token)` executes client behavior. No custom chat strings/sounds.
+- Slash commands `/flourish`, `/flourishforever`, `/rit`; `status` currently exposes a character GUID in chat—redact when sharing.
+- No LICENSE or automated tests found in current main tree; don't fabricate either. CurseForge-oriented `.pkgmeta` is packaging configuration, not confirmation of a published artifact.
+
+## Development protocol
+
+1. Inspect the live source and Git history; preserve README, concept, architecture, design, decisions and DEVLOG as the shared specification.
+2. Record **creator direction**, assistant proposal, alternatives and constraints separately. Do not claim an AI proposal was accepted unless Babuni.dev explicitly approved it.
+3. Record actual implementation files, dates, commit and release metadata; note that version 0.3.1 updated packaging/version text without runtime changes.
+4. For code changes, test client event signatures, abilities/spellbook enumeration, native emote output, per-character saved profiles, cooldown edge cases, reloads and compatibility with other emote addons.
+5. Distinguish source review, a mocked Lua test and real in-game proof; none were executed in this October 27 audit.
+6. Keep private chat/character GUIDs out of public portfolio examples. Respect third-party WoW assets and resolve absent code licensing with the creator.
+7. Update README, CONCEPT, ROADMAP, CHANGELOG, AGENTS, docs/ARCHITECTURE, DESIGN, CONTENT, DECISIONS, DEVLOG, AI_COLLABORATION for material changes.
+
+No gameplay, TOC or packaging modifications are authorized by this docs-only audit.
