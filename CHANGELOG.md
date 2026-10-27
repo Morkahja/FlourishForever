@@ -2,6 +2,13 @@
 
 **Creator and creative director:** Babuni.dev. **Interface:** WoW: Forever 16001.
 
+## October 27, 2026 — portfolio artwork
+
+- Added three creator-supplied images under `assets/portfolio/`: square logo, PNG showcase and JPEG thumbnail.
+- Added an asset index and JSON manifest for Babuni.dev display paths, dimensions and alt text.
+- Preserved original file bytes; checked image decoding, dimensions and the JPEG's size below 2 MB.
+- Updated README, content inventory, design notes and development history. No gameplay behavior changed; portfolio rendering remains unverified.
+
 ## October 27, 2026 — portfolio documentation audit
 
 - Expanded/created 11 substantial Markdown files describing the human-directed character-expression concept, implementation, UI, saved-data migration, release chronology, design decisions and test gaps.

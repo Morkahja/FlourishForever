@@ -1,0 +1,34 @@
+{
+  "project": "Flourish Forever",
+  "portfolio": "Babuni.dev",
+  "preferredPreview": "assets/portfolio/flourish-forever-thumbnail.jpg",
+  "assets": [
+    {
+      "role": "logo",
+      "path": "assets/portfolio/flourish-forever-logo.png",
+      "originalFilename": "Golden FF sword flourish medallion.png",
+      "width": 1254,
+      "height": 1254,
+      "bytes": 3133130,
+      "alt": "Gold FF monogram beneath a sweeping sword, surrounded by a gold medallion and violet light."
+    },
+    {
+      "role": "showcase",
+      "path": "assets/portfolio/flourish-forever-showcase.png",
+      "originalFilename": "Flourish Forever Gnome Roar Showcase.png",
+      "width": 1672,
+      "height": 941,
+      "bytes": 3481617,
+      "alt": "Flourish Forever promotional artwork featuring a roaring gnome and the ability-emote configuration panel."
+    },
+    {
+      "role": "thumbnail",
+      "path": "assets/portfolio/flourish-forever-thumbnail.jpg",
+      "originalFilename": "FlourishForever_Thumbnail.jpg",
+      "width": 1672,
+      "height": 941,
+      "bytes": 481703,
+      "alt": "Flourish Forever promotional preview with a roaring gnome, gold-and-violet branding, and addon settings."
+    }
+  ]
+}

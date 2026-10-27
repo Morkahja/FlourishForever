@@ -73,3 +73,7 @@ The initial **0.3.0-beta** implementation was committed **October 22, 2026**, al
 - [Decisions and alternatives](docs/DECISIONS.md) · [Narrative development journal](docs/DEVLOG.md) · [Human–AI collaboration](docs/AI_COLLABORATION.md) · [Developer rules](AGENTS.md)
 
 The original expressive-addon idea and creative decisions belong to Babuni.dev. The October 27 documentation audit is AI-assisted **analysis and writing**, not an in-game validation or a gameplay-code change.
+
+## Portfolio artwork
+
+[Portfolio assets](assets/portfolio/README.md) include the creator-supplied logo, promotional showcase and smaller JPEG preview. [Asset manifest](assets/portfolio/manifest.json) provides paths and alt text for Babuni.dev.

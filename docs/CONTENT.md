@@ -42,10 +42,10 @@ Older `ROARitFOREVERStorage` may be adopted if already loaded. Legacy character 
 - Labels **Enable ability emotes**, **Add ability**, **Configured abilities**, **Emotes (one is chosen at random)**, **Chance**, **Cooldown**, **Remove**.
 - Status prints master enabled state, configured ability count, and a **GUID-bearing** profile reference.
 
-The source relies on English UI strings and fallback emote labels, with game-global tokens/spell names potentially localized. There is no dedicated localization table, translated settings copy, or in-repository icon bundle.
+The source relies on English UI strings and fallback emote labels, with game-global tokens/spell names potentially localized. There is no dedicated localization table, translated settings copy, or runtime icon bundle. Portfolio artwork is stored separately under `assets/portfolio/`.
 
 ## Content provenance and rights
 
-The Git tree contains only **three Lua files**, a TOC, `.pkgmeta`, README, changelog and project documentation. No screenshot, sound, third-party texture, runtime dependency or test directory was found.
+The runtime consists of **three Lua files** and a TOC. The repository also contains `.pkgmeta`, project documentation, and creator-supplied promotional artwork under `assets/portfolio/`. See the [asset index](../assets/portfolio/README.md) and [manifest](../assets/portfolio/manifest.json). These promotional images are not loaded by the addon. No sound library, runtime dependency or test directory was added.
 
 The original text names **Babunigaming** as the developer; October 26 metadata credited **Babuni.dev**. WoW emote animations and client assets belong to their rightsholders. **No LICENSE** exists in the current repo, so do not imply a grant of permission to reuse this code beyond applicable law.

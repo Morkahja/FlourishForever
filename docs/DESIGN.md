@@ -1,7 +1,7 @@
 # Flourish Forever — visual and interaction design
 
 **Creator / creative direction:** Babuni.dev.  
-**Source:** current 0.3.1-beta UI Lua. No screenshots or custom artwork found in repository tree.
+**Source:** current 0.3.1-beta UI Lua. The initial audit found no artwork; creator-supplied portfolio artwork was added on October 27, 2026.
 
 ## A stage manager for a character's gestures
 
@@ -26,7 +26,7 @@ No random emote plays when the player leaves the pool empty. A spell added for t
 
 ## Visual vocabulary
 
-The addon uses the existing game UI templates: `BasicFrameTemplateWithInset`, `UICheckButtonTemplate`, `OptionsSliderTemplate`, `UIDropDownMenuTemplate`, `UIPanelButtonTemplate`, native scroll frames and standard fonts. There are **no shipped sprites, custom fonts, previews or animation assets**. The actual flourish comes from `DoEmote` and the client/race's built-in result.
+The addon uses the existing game UI templates: `BasicFrameTemplateWithInset`, `UICheckButtonTemplate`, `OptionsSliderTemplate`, `UIDropDownMenuTemplate`, `UIPanelButtonTemplate`, native scroll frames and standard fonts. There are **no runtime sprites, custom fonts, emote previews or animation assets**. Promotional artwork lives separately in `assets/portfolio/`. The actual flourish comes from `DoEmote` and the client/race's built-in result.
 
 This restraint makes the addon an expressive tool rather than an art asset mod. In-game character personality is created by **selection and timing**, not new textures.
 

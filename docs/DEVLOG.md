@@ -82,3 +82,11 @@ The most valuable evidence would be video or logs from the intended Forever beta
 Then inspect the creative quality: Does the random flourish make a character feel more alive, or does a particular combination become repetitive? Which gestures convey the right personality? Do two fast emotes overwhelm normal social play? These are design findings the creator should make from the game itself, not things an assistant can certify from source alone.
 
 Flourish Forever is a compact demonstration of **authored spontaneity**: the player chooses the moments and possible actions, and a modest system adds variation at playtime. The technical work matters because its restraints—per-character preferences, chance, cooldown, successful-cast events and honest data migration—let that spontaneous character expression remain under the player's control.
+
+## October 27, 2026 — preserving the portfolio artwork
+
+The creator supplied the accepted FF medallion logo, gnome-roar promotional showcase, and smaller JPEG thumbnail, and explicitly requested their addition to the repository for the Babuni.dev portfolio. The visual direction came from the creator: match the other Forever addons, show the addon alongside an appealing composition, and keep the upload thumbnail below 2 MB. Earlier AI work generated the artwork and prepared the smaller export.
+
+This asset addition preserves the three supplied files unchanged under `assets/portfolio/`, using URL-safe filenames. The assistant added an index and JSON manifest with dimensions, byte sizes, roles, suggested alt text and display paths, identifying the JPEG as the preferred web preview. Image decoding, dimensions and byte-for-byte equality with the supplied originals were checked. The JPEG is 481,703 bytes. This records the actual supplied file, rather than relying on an earlier conversational size estimate.
+
+No portfolio website integration or in-game behavior was tested by this addition. The promotional composition is not an unedited gameplay screenshot. The exact date of the earlier creative exchange is not established by the supplied excerpts; October 27 dates this repository addition.
