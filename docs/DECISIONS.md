@@ -38,3 +38,7 @@ The code and commit messages do not prove the full initial brainstorming, all al
 ## Unapproved questions for later discussion
 
 Should the first-cast `GetTime()` behavior be corrected? Should cooldowns survive reload? Should live hits (when knowable) be used rather than cast success? Should duplicated spell names be distinct configurations? Should a global emote frequency ceiling coexist with per-ability cooldowns? Should there be a preview button? Should the addon publish explicit license terms? Record an actual Babuni.dev choice before treating any as accepted.
+
+## Related development history
+
+Flourish Forever is the October 2026 WoW Forever expression of the action-emote idea. Unlike the earlier action-slot hooks, it responds to the player’s **reported successful spellcast** event and lets the player select spellbook abilities and existing client-native emotes in a GUI. Each new ability initially has ROAR selected, but the player may choose other available emote tokens. This is client-token selection rather than creation of arbitrary new emotes, and cast success does not prove a landed hit. See the [source-grounded expressive-addon timeline](EMOTE_FAMILY_HISTORY.md) for related projects and historical boundaries.

@@ -44,3 +44,8 @@ GitHub release entries for [0.3.0-beta](https://github.com/babunidev/FlourishFor
 - **`b73fed5344bd`** linked those initial project-history files from README.
 
 This October 27 editorial pass deepens the record without claiming the creator approved any new behavior or that the code was verified in game.
+
+## 2026-11-01 — expressive-addon family history
+
+- Connected Flourish Forever's cast-success and per-ability graphical selection to earlier action-slot emote addons.
+- Clarified that available emote options come from the client, not arbitrary user-created animations. See [family history](docs/EMOTE_FAMILY_HISTORY.md). Documentation only.

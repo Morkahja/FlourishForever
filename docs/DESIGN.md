@@ -37,3 +37,7 @@ The ability selector sorts spellbook results alphabetically, with ID ordering fo
 There is currently **no built-in preview button**, no separate custom text authoring, no emote-scene editor and no UI control for keeping cooldowns through logout. These are potential future decisions, not overlooked documentation of existing functionality.
 
 Possible accessibility/UX questions include slider readability at small scales, a visible warning that actual emotes may appear in normal chat, filtering unavailable tokens, and avoiding too many repeated noises in group content. None has been verified through an in-game test in this documentation audit.
+
+## Related development history
+
+Flourish Forever is the October 2026 WoW Forever expression of the action-emote idea. Unlike the earlier action-slot hooks, it responds to the player’s **reported successful spellcast** event and lets the player select spellbook abilities and existing client-native emotes in a GUI. Each new ability initially has ROAR selected, but the player may choose other available emote tokens. This is client-token selection rather than creation of arbitrary new emotes, and cast success does not prove a landed hit. See the [source-grounded expressive-addon timeline](EMOTE_FAMILY_HISTORY.md) for related projects and historical boundaries.

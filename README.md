@@ -77,3 +77,7 @@ The original expressive-addon idea and creative decisions belong to Babuni.dev. 
 ## Portfolio artwork
 
 [Portfolio assets](assets/portfolio/README.md) include the creator-supplied logo, promotional showcase and smaller JPEG preview. [Asset manifest](assets/portfolio/manifest.json) provides paths and alt text for Babuni.dev.
+
+## The longer history of ability emotes
+
+Flourish Forever is the October 2026 WoW Forever expression of the action-emote idea. Unlike the earlier action-slot hooks, it responds to the player’s **reported successful spellcast** event and lets the player select spellbook abilities and existing client-native emotes in a GUI. Each new ability initially has ROAR selected, but the player may choose other available emote tokens. This is client-token selection rather than creation of arbitrary new emotes, and cast success does not prove a landed hit. The [comparative history](docs/EMOTE_FAMILY_HISTORY.md) traces the earlier Buxbrew experiments, fixed ROAR pools, multi-slot configurations, editable guild emote registries and related sound-restoration addons.

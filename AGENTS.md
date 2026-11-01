@@ -35,3 +35,7 @@ The player must choose eligible non-passive abilities; a fresh character's confi
 7. Update README, CONCEPT, ROADMAP, CHANGELOG, AGENTS, docs/ARCHITECTURE, DESIGN, CONTENT, DECISIONS, DEVLOG, AI_COLLABORATION for material changes.
 
 No gameplay, TOC or packaging modifications are authorized by this docs-only audit.
+
+## Related projects and provenance
+
+Review [the expressive-addon family history](docs/EMOTE_FAMILY_HISTORY.md) when documenting this addon. Do not conflate the older button-press hooks, the guild's user-registered token table, Flourish Forever's spellbook/client-token selection, or Roar Forever's voice-restoration purpose. A successful cast event does not imply a successful target hit. Respect first-person creative authorship and evidence limitations.

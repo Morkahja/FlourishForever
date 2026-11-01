@@ -93,3 +93,7 @@ A slash-only UI hook `FlourishForever_OpenConfig` toggles that frame, and `Flour
 **No tests/** or CI workflow was found in the inspected main tree. GitHub published tags/releases [v0.3.0-beta](https://github.com/babunidev/FlourishForever/releases/tag/v0.3.0-beta) and [v0.3.1-beta](https://github.com/babunidev/FlourishForever/releases/tag/v0.3.1-beta), each with **zero uploaded assets**. `.pkgmeta` is CurseForge-packager metadata, not itself test evidence.
 
 The repository also has **no LICENSE** in its main tree. Exact target client event payloads, slider persistence and emote output still require **actual in-game tests**.
+
+## Related development history
+
+Flourish Forever is the October 2026 WoW Forever expression of the action-emote idea. Unlike the earlier action-slot hooks, it responds to the player’s **reported successful spellcast** event and lets the player select spellbook abilities and existing client-native emotes in a GUI. Each new ability initially has ROAR selected, but the player may choose other available emote tokens. This is client-token selection rather than creation of arbitrary new emotes, and cast success does not prove a landed hit. See the [source-grounded expressive-addon timeline](EMOTE_FAMILY_HISTORY.md) for related projects and historical boundaries.

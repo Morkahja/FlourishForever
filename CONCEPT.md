@@ -33,3 +33,7 @@ The interaction is an example of **emergent personality made from a few small sy
 The difference from an always-on automated announcer is essential. The player can curate or remove any configured spell, leave some abilities entirely untouched, disable the system without deleting settings, or uncheck every emote to make one configuration silent.
 
 The next creative choices—more nuanced animation cues, previewing an emote, safety controls for rapid actions or visual redesign—are not implied approvals simply because they are recorded in a roadmap. They remain choices for Babuni.dev after real in-game testing.
+
+## Related development history
+
+Flourish Forever is the October 2026 WoW Forever expression of the action-emote idea. Unlike the earlier action-slot hooks, it responds to the player’s **reported successful spellcast** event and lets the player select spellbook abilities and existing client-native emotes in a GUI. Each new ability initially has ROAR selected, but the player may choose other available emote tokens. This is client-token selection rather than creation of arbitrary new emotes, and cast success does not prove a landed hit. See the [source-grounded expressive-addon timeline](docs/EMOTE_FAMILY_HISTORY.md) for related projects and historical boundaries.

@@ -50,3 +50,7 @@
 ## Open creative directions requiring creator approval
 
 Would per-ability preview help select the right flourish? Should emotes triggered close together be globally rate limited to keep chat quieter? Should cooldowns survive reload? Should the addon distinguish cast success from actual hit? Should a user be able to supply custom text or keep the native emote-only boundary? Are certain class/proc spells too noisy? These are **proposals, not implemented features or accepted decisions**.
+
+## Related development history
+
+Flourish Forever is the October 2026 WoW Forever expression of the action-emote idea. Unlike the earlier action-slot hooks, it responds to the player’s **reported successful spellcast** event and lets the player select spellbook abilities and existing client-native emotes in a GUI. Each new ability initially has ROAR selected, but the player may choose other available emote tokens. This is client-token selection rather than creation of arbitrary new emotes, and cast success does not prove a landed hit. See the [source-grounded expressive-addon timeline](docs/EMOTE_FAMILY_HISTORY.md) for related projects and historical boundaries.

@@ -38,3 +38,7 @@ Each meaningful future feature or change should preserve:
 Publish readable, faithful narratives rather than raw private chat logs. Avoid exposing character GUIDs or unrelated player/account information in a public portfolio. Respect the client's external game assets and seek a creator decision on the repository's absent LICENSE before claiming source reuse permission.
 
 No Lua, manifest, packager metadata or other non-document content was changed by this audit.
+
+## Related development history
+
+Flourish Forever is the October 2026 WoW Forever expression of the action-emote idea. Unlike the earlier action-slot hooks, it responds to the player’s **reported successful spellcast** event and lets the player select spellbook abilities and existing client-native emotes in a GUI. Each new ability initially has ROAR selected, but the player may choose other available emote tokens. This is client-token selection rather than creation of arbitrary new emotes, and cast success does not prove a landed hit. See the [source-grounded expressive-addon timeline](EMOTE_FAMILY_HISTORY.md) for related projects and historical boundaries.

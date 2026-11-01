@@ -49,3 +49,7 @@ The source relies on English UI strings and fallback emote labels, with game-glo
 The runtime consists of **three Lua files** and a TOC. The repository also contains `.pkgmeta`, project documentation, and creator-supplied promotional artwork under `assets/portfolio/`. See the [asset index](../assets/portfolio/README.md) and [manifest](../assets/portfolio/manifest.json). These promotional images are not loaded by the addon. No sound library, runtime dependency or test directory was added.
 
 The original text names **Babunigaming** as the developer; October 26 metadata credited **Babuni.dev**. WoW emote animations and client assets belong to their rightsholders. **No LICENSE** exists in the current repo, so do not imply a grant of permission to reuse this code beyond applicable law.
+
+## Related development history
+
+Flourish Forever is the October 2026 WoW Forever expression of the action-emote idea. Unlike the earlier action-slot hooks, it responds to the player’s **reported successful spellcast** event and lets the player select spellbook abilities and existing client-native emotes in a GUI. Each new ability initially has ROAR selected, but the player may choose other available emote tokens. This is client-token selection rather than creation of arbitrary new emotes, and cast success does not prove a landed hit. See the [source-grounded expressive-addon timeline](EMOTE_FAMILY_HISTORY.md) for related projects and historical boundaries.
